@@ -1,0 +1,6 @@
+# Python requirements for local development & live server
+# To install: pip install -r requirements.txt
+# To run live server: python3 -m http.server 8000 (or use livereload)
+
+livereload>=2.6.3
+

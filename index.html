@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Portfolio of Kunal Prajapati, a data analyst turning raw data into dashboards, reports, and clear decisions."
+    >
+    <title>Kunal Prajapati | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  </head>
+  <body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-shadow" aria-hidden="true"></div>
+
+    <header class="site-header" aria-label="Primary">
+      <a class="logo" href="#top" aria-label="Kunal Prajapati home">KP</a>
+
+      <nav class="nav-links" aria-label="Portfolio sections">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span aria-hidden="true"></span>
+        </button>
+        <a class="resume-link" href="#contact">Resume PDF <span aria-hidden="true">&darr;</span></a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-3d-grid" aria-hidden="true">
+          <canvas class="hero-grid-canvas" id="heroGridCanvas"></canvas>
+        </div>
+        <div class="hero-inner">
+          <p class="location-label">India / Data portfolio</p>
+          <h1 id="hero-title">
+            <span>Kunal</span>
+            <span>Prajapati</span>
+          </h1>
+          <p class="hero-lede">
+            Data analyst building <strong>dashboards, SQL reports and Python analysis</strong>
+            that make business numbers easier to trust.
+          </p>
+
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="cta-button" href="#work">
+              See the work
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+            <a class="recommend-pill" href="#contact">
+              <span class="pill-dot" aria-hidden="true"></span>
+              Data storytelling for clear decisions
+              <small>available</small>
+            </a>
+          </div>
+
+          <dl class="metric-strip" aria-label="Portfolio highlights" data-reveal data-reveal-delay="400">
+            <div>
+              <dt class="counter" data-target="3" data-suffix="+">0+</dt>
+              <dd>analytics builds</dd>
+            </div>
+            <div>
+              <dt class="counter" data-target="6">0</dt>
+              <dd>core tools</dd>
+            </div>
+            <div>
+              <dt class="counter" data-target="4">0</dt>
+              <dd>workflow stages</dd>
+            </div>
+            <div>
+              <dt>2026</dt>
+              <dd>open for work</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="section-inner">
+          <div class="section-heading" data-reveal>
+            <p>About</p>
+            <span aria-hidden="true"></span>
+          </div>
+
+          <div class="about-grid">
+            <div data-reveal="left">
+              <h2 id="about-title">Hi there!</h2>
+              <h2 id="about-title">Hi there!</h2>
+              <figure class="portrait-card" aria-label="Kunal Prajapati profile visual">
+                <div class="portrait-art">
+                  <img class="portrait-img" src="profile.jpg" alt="Kunal Prajapati - Data Analyst">
+                </div>
+                <figcaption>Data analyst / dashboard builder</figcaption>
+              </figure>
+            </div>
+
+            <div class="about-copy" data-reveal="right" data-reveal-delay="200">
+              <p class="about-lede">
+                I turn messy datasets into clean dashboards, sharp SQL reports, and analysis that helps
+                people understand what is actually happening.
+              </p>
+              <p>
+                My work starts with the question behind the numbers: what should be measured, what
+                decision depends on it, and how the insight should be shown so it is easy to act on.
+              </p>
+              <p>
+                Right now I am focused on data analysis, business intelligence, Python EDA, and practical
+                data science foundations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section toolbox-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-inner">
+          <div class="section-heading" data-reveal>
+            <p>Toolbox</p>
+            <span aria-hidden="true"></span>
+          </div>
+
+          <h2 id="skills-title" data-reveal data-reveal-delay="100">What I build with</h2>
+
+          <div class="toolbox" data-reveal data-reveal-delay="200">
+            <div class="tool-row">
+              <h3>Languages</h3>
+              <div class="tool-chips">
+                <span><i class="devicon-python-plain colored"></i> Python</span>
+                <span><i class="devicon-java-plain colored"></i> Java</span>
+                <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                <span><i class="devicon-azuresqldatabase-plain colored"></i> SQL</span>
+              </div>
+            </div>
+            <div class="tool-row">
+              <h3>Analytics</h3>
+              <div class="tool-chips">
+                <span><svg class="tool-icon" viewBox="0 0 128 128"><path fill="#107C41" d="M72 16H24c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h80c4.4 0 8-3.6 8-8V48L72 16z"/><path fill="#1F9A55" d="M72 16v32h32L72 16z"/><path fill="#FFF" d="M38.5 48l11.5 20-11.5 20h12.5l5.5-11 5.5 11h12.5L63 68l11.5-20H62l-5.5 10.5L51 48H38.5z"/></svg> Excel</span>
+                <span><svg class="tool-icon" viewBox="0 0 128 128"><path fill="#F2C811" d="M24 64h20v48H24z"/><path fill="#F2C811" d="M54 44h20v68H54z"/><path fill="#F2C811" d="M84 16h20v96H84z"/></svg> Power BI</span>
+                <span><svg class="tool-icon" viewBox="0 0 128 128"><path fill="#E8762D" d="M60 12h8v24h24v8H68v24h-8V44H36v-8h24V12z"/><path fill="#1F4570" d="M20 52h6v14h14v6H26v14h-6V72H6v-6h14V52zm80 0h6v14h14v6h-14v14h-6V72H86v-6h14V52z"/><path fill="#E8762D" d="M60 84h8v32h-8V84z"/></svg> Tableau</span>
+                <span><svg class="tool-icon" viewBox="0 0 128 128"><path fill="#0F9D58" d="M76 12H28c-4.4 0-8 3.6-8 8v88c0 4.4 3.6 8 8 8h72c4.4 0 8-3.6 8-8V44L76 12z"/><path fill="#A2D99B" d="M76 12v32h32L76 12z"/><path fill="#FFF" d="M36 56h56v8H36zm0 16h56v8H36zm0 16h56v8H36z"/></svg> Google Sheets</span>
+              </div>
+            </div>
+            <div class="tool-row">
+              <h3>Python stack</h3>
+              <div class="tool-chips">
+                <span><i class="devicon-pandas-plain colored"></i> Pandas</span>
+                <span><i class="devicon-numpy-plain colored"></i> NumPy</span>
+                <span><i class="devicon-matplotlib-plain colored"></i> Matplotlib</span>
+                <span><i class="devicon-python-plain colored"></i> Seaborn</span>
+              </div>
+            </div>
+            <div class="tool-row">
+              <h3>Databases</h3>
+              <div class="tool-chips">
+                <span><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                <span><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+              </div>
+            </div>
+            <div class="tool-row">
+              <h3>Workflow</h3>
+              <div class="tool-chips">
+                <span><i class="devicon-github-original colored"></i> GitHub</span>
+                <span><i class="devicon-jupyter-plain colored"></i> Jupyter</span>
+                <span><b>EDA</b> Exploratory analysis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-inner experience-layout">
+          <aside class="experience-sidebar" data-reveal="left">
+            <div class="section-heading">
+              <p>Experience</p>
+              <span aria-hidden="true"></span>
+            </div>
+            <h2 id="experience-title">Where I have been</h2>
+
+            <div class="experience-tabs" aria-label="Experience list">
+              <button class="is-active" type="button" data-target="exp-analytics">
+                <span></span>
+                <strong>Data Analytics Projects</strong>
+                <small>Portfolio work &middot; 2026</small>
+              </button>
+              <button type="button" data-target="exp-bi">
+                <span></span>
+                <strong>Business Intelligence</strong>
+                <small>Dashboard practice &middot; 2025</small>
+              </button>
+              <button type="button" data-target="exp-python">
+                <span></span>
+                <strong>Python EDA Lab</strong>
+                <small>Analysis practice &middot; 2025</small>
+              </button>
+              <button type="button" data-target="exp-sql">
+                <span></span>
+                <strong>SQL Reporting</strong>
+                <small>Query practice &middot; 2024</small>
+              </button>
+            </div>
+          </aside>
+
+          <div class="experience-cards" data-reveal="right" data-reveal-delay="200">
+            <article class="experience-card is-current" id="exp-analytics">
+              <p class="card-meta">2026 - present &middot; Remote</p>
+              <h3>Building a practical analytics portfolio from raw datasets to polished outputs.</h3>
+              <ul>
+                <li>Cleaned datasets, defined KPIs, and shaped analysis around business questions.</li>
+                <li>Built dashboard views for revenue, users, segments, and trend monitoring.</li>
+                <li>Turned findings into concise recommendations instead of stopping at charts.</li>
+              </ul>
+              <div class="tag-list">
+                <span>Power BI</span>
+                <span>SQL</span>
+                <span>Excel</span>
+              </div>
+            </article>
+
+            <article class="experience-card" id="exp-bi">
+              <p class="card-meta">2025 - 2026 &middot; Dashboard practice</p>
+              <h3>Designing business intelligence views that are easy to scan and easy to explain.</h3>
+              <ul>
+                <li>Created report layouts with clear KPI hierarchy, comparison views, and filters.</li>
+                <li>Practiced executive-summary pages, monthly trend pages, and drill-down tables.</li>
+                <li>Focused on visual choices that reduce noise and make the next action obvious.</li>
+              </ul>
+              <div class="tag-list">
+                <span>Power BI</span>
+                <span>Tableau</span>
+                <span>KPI design</span>
+              </div>
+            </article>
+
+            <article class="experience-card" id="exp-python">
+              <p class="card-meta">2025 &middot; Python analysis</p>
+              <h3>Exploring data with Python notebooks before turning the useful parts into visuals.</h3>
+              <ul>
+                <li>Used Pandas for cleaning, grouping, joining, and reshaping datasets.</li>
+                <li>Created exploratory charts to compare segments, categories, outliers, and trends.</li>
+                <li>Documented assumptions so the analysis stays readable after the notebook closes.</li>
+              </ul>
+              <div class="tag-list">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Seaborn</span>
+              </div>
+            </article>
+
+            <article class="experience-card" id="exp-sql">
+              <p class="card-meta">2024 - 2025 &middot; Reporting foundations</p>
+              <h3>Writing SQL queries that turn normalized data into useful reporting tables.</h3>
+              <ul>
+                <li>Practiced joins, aggregations, filtering, window functions, and reusable views.</li>
+                <li>Built reporting tables for sales, customer activity, and performance summaries.</li>
+                <li>Checked query output against source totals to keep results trustworthy.</li>
+              </ul>
+              <div class="tag-list">
+                <span>SQL</span>
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section work-section" id="work" aria-labelledby="work-title">
+        <div class="section-inner">
+          <div class="section-heading" data-reveal>
+            <p>Selected work</p>
+            <span aria-hidden="true"></span>
+          </div>
+          <h2 id="work-title" data-reveal data-reveal-delay="100">Four things worth opening</h2>
+          <p class="section-subtitle" data-reveal data-reveal-delay="200">
+            Focused analytics projects with clear questions, measured outputs, and clean presentation.
+          </p>
+
+          <div class="work-list">
+            <article class="work-item" data-reveal>
+              <div class="project-preview preview-dashboard" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="work-copy">
+                <p class="project-meta">01 / 2026 &middot; Dashboard</p>
+                <h3>PulseDesk Analytics</h3>
+                <p class="project-subtitle">Product metrics and growth monitoring</p>
+                <p>
+                  A clean dashboard concept for tracking usage, conversion, retention, and monthly
+                  growth signals in one scannable view.
+                </p>
+                <div class="tag-list">
+                  <span>Power BI</span>
+                  <span>SQL</span>
+                  <span>KPI design</span>
+                </div>
+                <a class="outline-link" href="https://github.com/Kunaltab" target="_blank" rel="noreferrer">View Repository <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+
+            <article class="work-item reverse" data-reveal data-reveal-delay="100">
+              <div class="project-preview preview-sales" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="work-copy">
+                <p class="project-meta">02 / 2025 &middot; Analysis</p>
+                <h3>Sales Insight Engine</h3>
+                <p class="project-subtitle">Revenue trends, segments, and forecasting signals</p>
+                <p>
+                  A Python analysis project that studies sales performance, customer segments, product
+                  mix, and trend changes across months.
+                </p>
+                <div class="tag-list">
+                  <span>Python</span>
+                  <span>Pandas</span>
+                  <span>Forecasting</span>
+                </div>
+                <a class="outline-link" href="https://github.com/Kunaltab" target="_blank" rel="noreferrer">View Repository <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+
+            <article class="work-item" data-reveal data-reveal-delay="200">
+              <div class="project-preview preview-students" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="work-copy">
+                <p class="project-meta">03 / 2025 &middot; Study</p>
+                <h3>Student Performance Study</h3>
+                <p class="project-subtitle">Exploratory data science for learning patterns</p>
+                <p>
+                  An EDA project identifying how study time, attendance, scores, and category-level
+                  patterns connect to performance.
+                </p>
+                <div class="tag-list">
+                  <span>EDA</span>
+                  <span>Python</span>
+                  <span>Statistics</span>
+                </div>
+                <a class="outline-link" href="https://github.com/Kunaltab" target="_blank" rel="noreferrer">View Repository <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+
+            <article class="work-item reverse" data-reveal data-reveal-delay="300">
+              <div class="project-preview preview-sql" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="work-copy">
+                <p class="project-meta">04 / 2024 &middot; Reporting</p>
+                <h3>SQL Reporting Pack</h3>
+                <p class="project-subtitle">Reusable queries for business summaries</p>
+                <p>
+                  A reporting practice set built around joins, aggregations, cohorts, and summary views
+                  for business-style analysis.
+                </p>
+                <div class="tag-list">
+                  <span>SQL</span>
+                  <span>MySQL</span>
+                  <span>Reporting</span>
+                </div>
+                <a class="outline-link" href="https://github.com/Kunaltab" target="_blank" rel="noreferrer">View Repository <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section certificates-section" id="certificates" aria-labelledby="certificates-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p>Certifications</p>
+            <span aria-hidden="true"></span>
+          </div>
+          <h2 id="certificates-title">Verified skills & credentials</h2>
+          <p class="section-subtitle">
+            Professional certifications in data analysis, dashboard design, SQL reporting, and Python data science.
+          </p>
+
+          <div class="certificates-grid">
+            <article class="certificate-card" data-reveal="scale" data-reveal-delay="100">
+              <div class="cert-header">
+                <span class="cert-badge">PY</span>
+                <div>
+                  <h3>Data Analysis with Python</h3>
+                  <p class="cert-issuer">FreeCodeCamp / IBM &middot; 2025</p>
+                </div>
+              </div>
+              <p class="cert-desc">
+                Covered data manipulation with Pandas, numerical computing with NumPy, visualization with Matplotlib & Seaborn, and exploratory analysis flows.
+              </p>
+              <div class="tag-list">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Seaborn</span>
+              </div>
+              <a class="outline-link cert-link" href="#contact">View Credential <span aria-hidden="true">&nearr;</span></a>
+            </article>
+
+            <article class="certificate-card" data-reveal="scale" data-reveal-delay="200">
+              <div class="cert-header">
+                <span class="cert-badge">BI</span>
+                <div>
+                  <h3>Power BI Data Visualization</h3>
+                  <p class="cert-issuer">Microsoft Certified / Coursera &middot; 2025</p>
+                </div>
+              </div>
+              <p class="cert-desc">
+                Focused on DAX calculated measures, relational data modeling, interactive dashboard design, executive KPI summary views, and report storytelling.
+              </p>
+              <div class="tag-list">
+                <span>Power BI</span>
+                <span>DAX</span>
+                <span>KPI Design</span>
+                <span>Power Query</span>
+              </div>
+              <a class="outline-link cert-link" href="#contact">View Credential <span aria-hidden="true">&nearr;</span></a>
+            </article>
+
+            <article class="certificate-card" data-reveal="scale" data-reveal-delay="300">
+              <div class="cert-header">
+                <span class="cert-badge">GO</span>
+                <div>
+                  <h3>Google Data Analytics Professional</h3>
+                  <p class="cert-issuer">Google &middot; 2025</p>
+                </div>
+              </div>
+              <p class="cert-desc">
+                Comprehensive training across the data analysis lifecycle: data cleaning, SQL aggregations, spreadsheet modeling, Tableau charts, and business analytics.
+              </p>
+              <div class="tag-list">
+                <span>SQL</span>
+                <span>Tableau</span>
+                <span>Data Cleaning</span>
+                <span>R/Python</span>
+              </div>
+              <a class="outline-link cert-link" href="#contact">View Credential <span aria-hidden="true">&nearr;</span></a>
+            </article>
+
+            <article class="certificate-card" data-reveal="scale" data-reveal-delay="400">
+              <div class="cert-header">
+                <span class="cert-badge">DS</span>
+                <div>
+                  <h3>Data Science Foundations & EDA</h3>
+                  <p class="cert-issuer">DataCamp / IBM &middot; 2024</p>
+                </div>
+              </div>
+              <p class="cert-desc">
+                Studied statistical analysis, hypothesis testing, exploratory data analysis (EDA), linear regression models, and data distribution evaluation.
+              </p>
+              <div class="tag-list">
+                <span>Statistics</span>
+                <span>EDA</span>
+                <span>Regression</span>
+                <span>Python</span>
+              </div>
+              <a class="outline-link cert-link" href="#contact">View Credential <span aria-hidden="true">&nearr;</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section rest-section" aria-labelledby="rest-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p>The rest of it</p>
+            <span aria-hidden="true"></span>
+          </div>
+          <h2 id="rest-title">Education & Process</h2>
+
+          <div class="rest-grid">
+            <article data-reveal="left" data-reveal-delay="100">
+              <h3>Education</h3>
+              <ul>
+                <li>
+                  <strong>Data analysis and data science learning</strong>
+                  <span>Python, SQL, dashboards, and statistics foundations</span>
+                </li>
+                <li>
+                  <strong>Portfolio practice</strong>
+                  <span>Business datasets, reporting flows, and dashboard design</span>
+                </li>
+              </ul>
+            </article>
+
+            <article data-reveal="right" data-reveal-delay="200">
+              <h3>Process</h3>
+              <ul>
+                <li>
+                  <strong>Ask</strong>
+                  <span>Clarify the business question and decision.</span>
+                </li>
+                <li>
+                  <strong>Prepare</strong>
+                  <span>Clean, combine, and validate the data.</span>
+                </li>
+                <li>
+                  <strong>Present</strong>
+                  <span>Show the insight in a way people can use.</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-inner contact-inner">
+          <div data-reveal>
+            <p class="contact-kicker">Let&apos;s build something useful.</p>
+            <h2 id="contact-title">Contact</h2>
+            <p>
+              Open to data analysis projects, dashboard work, reporting cleanup, and practical
+              business intelligence builds.
+            </p>
+          </div>
+
+          <div class="contact-panel" data-reveal="right" data-reveal-delay="200">
+            <a class="email-link" href="mailto:kunalprajapati.works@outlook.com">kunalprajapati.works<wbr>@outlook.com</a>
+            <div class="social-links">
+              <a href="https://github.com/Kunaltab" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">&nearr;</span></a>
+              <a href="https://www.linkedin.com/in/kunaal17" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">&nearr;</span></a>
+              <a href="#top">Back up <span aria-hidden="true">&uarr;</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a class="back-to-top" href="#top" aria-label="Back to top">&uarr;</a>
+
+    <footer class="site-footer">
+      <p>Kunal Prajapati &middot; India</p>
+      <p>Thanks for scrolling all the way down :)</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
